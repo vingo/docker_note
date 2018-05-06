@@ -1,0 +1,29 @@
+#Execute Docker image
+docker run hello-world
+
+#List Docker images
+docker image ls
+
+#List Docker containers (running, all, all in quiet mode)
+docker container ls
+docker container ls --all
+docker container ls -aq
+#This creates a Docker image
+docker build -t {tag_name} .
+#remove image
+docker image rm {image_id}
+docker image rm $(docker image ls -a -q) 
+
+#Run  a Docker image( -p  export port to current host)
+docker container run -p {publish_port}:{export_port} {tag_name}
+
+docker login 
+#create tag image.
+docker tag {image} {username}/{repository}:{tag}
+docker image ls
+#Upload your tagged image to the repository
+docker push {username}/{repository}:{tag}
+
+
+
+
