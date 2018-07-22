@@ -24,6 +24,9 @@ docker image ls
 #Upload your tagged image to the repository
 docker push {username}/{repository}:{tag}
 
+#login to container
+sudo docker attach {commm_id}
+sudo docker exec -it {commm_id} /bin/bash
 
 
 
