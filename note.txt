@@ -1,8 +1,12 @@
-#Execute Docker image
-docker run hello-world
+#Load Docker image
+docker pull training/webapp  # load image
 
 #List Docker images
 docker image ls
+
+#Execute Docker image
+docker run hello-world
+
 
 #List Docker containers (running, all, all in quiet mode)
 docker container ls
